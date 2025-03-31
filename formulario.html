@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<!--Cuerpo del inicio-->
+
+<body>
+    <!--Division del encabezado de la pagina-->
+    <nav class="cabeza">
+        <header class="menup">
+            <h1>Recursos para Desarrolladores Web</h1> <!--Titulo principal-->
+            <div id="menu">
+                <a href="index.html">Inicio</a> <!--Enlace para unificar las demas páginas al sitio-->
+                <a href="galeria.html">Galeria</a> <!--Enlace para unificar las demas páginas al sitio-->
+                <a href="formulario.html">Contacto</a> <!--Enlace para unificar las demas páginas al sitio-->
+            </div>
+        </header>
+    </nav>
+    <!--Declaración de main para contenido principal de pagina-->
+    <main>
+        <h2>Formulario de contacto</h2>
+        <!--Formulario con entradas, salidas y botones-->
+        <div class="formulario">
+            <form action="/enviar" method="post">
+                <!--Label con el titulo-->
+                <label for="Nombre;">Nombre</label>
+                <!--Input para la entrada de texto condicionado a obligatorio-->
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="telefono" ;>Telefono</label>
+                <input type="int" name="telefono" required><br><br>
+
+                <label for="email">Correo electronico: </label>
+                <input type="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="10" cols="50" required></textarea><br><br>
+                <!--Boton de enviar información-->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <br>
+    <hr>
+    <!--Pie de página-->
+    <footer>
+        <p><b>&copy; 2025 Recursos para Desarrolladores Web. Todos los derechos reservados.</b></p>
+        <p>
+            <a href="#privacidad">Política de Privacidad</a> |
+            <a href="#contacto">Contacto</a>
+        </p>
+        <br>
+        <b>
+            <p>Elaborado por: Shirley Marcela Castillo Adames </p>
+            <p>Correo: shirleyma.castilload@ecci.edu.co </p>-
+        </b>
+
+    </footer>
+</body>
+
+</html>

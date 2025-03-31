@@ -1,0 +1,201 @@
+/*Shirley Castillo - 133173*/
+
+
+/*Poner en 0 las margenes y espacios de relleno*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px; /*Define el tamaño del texto en todas las páginas*/
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif; /*Tipo de fuente del texto en el cuerpo*/
+    line-height: 1.6; /*Distancia entre las líneas de texto*/
+    margin: 0; /*margen en 0 al rededor del contenido*/
+    padding: 0; /*relleno del texto en 0*/
+    background-color: #d7d7d7; /*Color de fondo de la página*/
+    font-size: 1em; /*Tamaño de fuente*/
+}
+
+h2 {
+    text-align: center; /*Alinear el texto al centro*/
+    margin-bottom: 20px; /*Margen inferior del texto*/
+    font-size: 30px; /*Tamaño de la fuente*/
+    padding: 10px; /*Relleno que rodea el texto*/
+}
+
+h1 {
+    text-align: center;/*Alinear el texto al centro*/
+    margin-bottom: 20px; /*Margen inferior del texto*/
+    font-size: 40px; /*Tamaño de la fuente*/
+    color: rgb(12, 12, 76); /*Color del texto*/
+
+}
+
+footer {
+    line-height: 1.9;
+    background-color: rgb(153, 212, 212); //*Color de fondo del pie de página*/
+    margin: 0 200px;
+}
+
+header {
+    background-color: rgb(153, 212, 212); //*Color de fondo del encabezado*/
+}
+
+
+#menu {
+    text-align: center; /*Alineación en el centro del indice de la pagina*/
+    margin-top: 15px; /*Margen superior del menu */
+}
+
+#menu a {
+    margin: 0 20px; /*Espaciado entre las palabras del menu*/
+    text-decoration: none; /*Texto sin decoración*/
+    color: #262430; /*Color del texto*/
+    font-weight: bold; /*Grosor o negrilla de la fuente*/
+    font-size: 18px; /*Tamaño de la fuente*/
+}
+
+#menu a:hover {
+    color: rgb(115, 115, 119);/*Resalto o sombra sobre el texto cuando pasa el mouse*/
+}
+
+
+.formulario {
+    display: grid; /*Situa el contenido del formulario en una cuadricula*/
+    gap: 20px; /*Espacios entre los elementos de la cuadricula*/ 
+    justify-items: center; /*Alineación de los items */
+    width: 100%; /*Ancho de toda la cuadricula*/
+    max-width: 500px; /*Maximo ancho del formulario*/
+    margin: 0 auto; /*Centra el formulario horizontalmente*/
+    padding: 1em; /*Relleno dentro del formulario*/
+    background-color: white; /*Color de fondo de la cuadricula*/
+    border-radius: 8px; /*redondeado de la cuadricula*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Sombra al rededor del formulario*/
+}
+
+img {
+    width: 100%; /* Las imágenes se ajustan al ancho de su contenedor */
+    max-width: 650px; /* Maximo ancho del contendor */
+    height: auto; /* Mantiene la proporcion original de la foto */
+    justify-self: center; /*Alineación al centro de la imagen*/
+}
+
+/* Cuando el tamaño de la pantalla es más pequeño */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .info {
+        padding: 1em; /* Reducir el padding para pantallas pequeñas */
+    }
+}
+.info {
+    display: grid; /*Situa el contenido del formulario en una cuadricula*/
+    gap: 20px; /*Espacios entre los elementos de la cuadricula*/ 
+    justify-items: center; /*Alineación de los items */
+    width: 100%; /*Ancho de toda la cuadricula*/
+    max-width: 1000px; /*Maximo ancho del formulario*/
+    margin: 0 auto; /*Centra el formulario horizontalmente*/
+    padding: 1em; /*Relleno dentro del formulario*/
+    background-color: white; /*Color de fondo de la cuadricula*/
+    border-radius: 8px; /*redondeado de la cuadricula*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Sombra al rededor del formulario*/
+}
+
+.formulario label {
+    font-size: 1rem; /*Tamaño de la fuente*/
+    color: #333; /*Color del texto*/
+    margin-bottom: 0.5em; /*Margen superior*/
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%; /*Ocupación de los campos*/
+    padding: 1em; /*Relleno de las entradas de texto*/
+    border: 1px solid #ccc; /*Borde de las entradas de texto*/
+    border-radius: 4px; /*Redondeado del borde*/
+    font-size: 1rem; /*Tamaño de la fuente*/
+    background-color: rgb(181, 235, 235); /*Color de fondo*/
+    color: #333; /*Color del texto*/
+}
+
+iframe {
+    width: 100%; /*Ocupación de los campos*/
+    max-width: 560px; /* Para que no se estire demasiado */
+    height: auto; /*Mantiene la proporción del fram*/
+    aspect-ratio: 16 / 9; /* Mantiene las proporciones de los videos */
+}
+
+.formulario input[type="submit"],
+.formulario button {
+    background-color: rgb(115, 115, 119); /*Color de relleno del boton*/
+    color: rgb(0, 0, 0); /*Color de texto del boton*/
+    border: none; /*Ningun borde*/
+    padding: 0.8em 1.5em; /*Relleno del boton*/
+    font-size: 1rem; /*Tamaño de la fuente*/
+    cursor: pointer; /*Cambia el tipo de cursor cuando esta sobre el boton*/
+    border-radius: 4px; /*Redondeado del borde*/
+}
+
+.formulario input[type="submit"]:hover,
+.formulario button:hover {
+    background-color: rgb(100, 100, 104); /* Resaltado al tocar el boton*/
+}
+
+.formulario textarea {
+    resize: vertical; /*Permite que el area de texto solo se acomode horizontalmente*/
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 400px) {
+    .formulario {
+        max-width: 90%;
+    }
+}
+
+/* Menú en pantallas pequeñas */
+@media (max-width: 600px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        /* Menú en columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    #menu a {
+        margin: 10px 0;
+        /* Separación más grande entre los enlaces */
+        font-size: 1.2rem;
+        /* Aumentamos un poco el tamaño de fuente */
+    }
+}
+
+
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+    }
+
+    .formulario {
+        padding: 1em;
+    }
+}
